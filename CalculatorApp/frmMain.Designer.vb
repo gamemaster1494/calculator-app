@@ -22,7 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
+        btnOne = New Button()
         btnZero = New Button()
         btnNine = New Button()
         btnEight = New Button()
@@ -36,19 +36,19 @@ Partial Class frmMain
         btnMultiply = New Button()
         btnSubtract = New Button()
         btnAdd = New Button()
-        btnDecimal = New Button()
+        btnClear = New Button()
         btnEqual = New Button()
-        TextBox1 = New TextBox()
+        txtScreen = New TextBox()
         SuspendLayout()
         ' 
-        ' Button1
+        ' btnOne
         ' 
-        Button1.Location = New Point(12, 123)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(33, 35)
-        Button1.TabIndex = 0
-        Button1.Text = "1"
-        Button1.UseVisualStyleBackColor = True
+        btnOne.Location = New Point(12, 123)
+        btnOne.Name = "btnOne"
+        btnOne.Size = New Size(33, 35)
+        btnOne.TabIndex = 0
+        btnOne.Text = "1"
+        btnOne.UseVisualStyleBackColor = True
         ' 
         ' btnZero
         ' 
@@ -167,39 +167,40 @@ Partial Class frmMain
         btnAdd.Text = "+"
         btnAdd.UseVisualStyleBackColor = True
         ' 
-        ' btnDecimal
+        ' btnClear
         ' 
-        btnDecimal.Location = New Point(90, 164)
-        btnDecimal.Name = "btnDecimal"
-        btnDecimal.Size = New Size(33, 35)
-        btnDecimal.TabIndex = 14
-        btnDecimal.Text = "."
-        btnDecimal.UseVisualStyleBackColor = True
+        btnClear.Location = New Point(12, 164)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(33, 35)
+        btnClear.TabIndex = 14
+        btnClear.Text = "C"
+        btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnEqual
         ' 
-        btnEqual.Location = New Point(12, 164)
+        btnEqual.Location = New Point(90, 164)
         btnEqual.Name = "btnEqual"
         btnEqual.Size = New Size(33, 35)
         btnEqual.TabIndex = 15
         btnEqual.Text = "="
         btnEqual.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' txtScreen
         ' 
-        TextBox1.Location = New Point(12, 12)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(150, 23)
-        TextBox1.TabIndex = 16
+        txtScreen.Enabled = False
+        txtScreen.Location = New Point(12, 12)
+        txtScreen.Name = "txtScreen"
+        txtScreen.Size = New Size(150, 23)
+        txtScreen.TabIndex = 16
         ' 
         ' frmMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(179, 218)
-        Controls.Add(TextBox1)
+        Controls.Add(txtScreen)
         Controls.Add(btnEqual)
-        Controls.Add(btnDecimal)
+        Controls.Add(btnClear)
         Controls.Add(btnAdd)
         Controls.Add(btnSubtract)
         Controls.Add(btnMultiply)
@@ -213,7 +214,7 @@ Partial Class frmMain
         Controls.Add(btnEight)
         Controls.Add(btnNine)
         Controls.Add(btnZero)
-        Controls.Add(Button1)
+        Controls.Add(btnOne)
         MaximizeBox = False
         MinimizeBox = False
         Name = "frmMain"
@@ -222,7 +223,7 @@ Partial Class frmMain
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnOne As Button
     Friend WithEvents btnZero As Button
     Friend WithEvents btnNine As Button
     Friend WithEvents btnEight As Button
@@ -236,8 +237,8 @@ Partial Class frmMain
     Friend WithEvents btnMultiply As Button
     Friend WithEvents btnSubtract As Button
     Friend WithEvents btnAdd As Button
-    Friend WithEvents btnDecimal As Button
+    Friend WithEvents btnClear As Button
     Friend WithEvents btnEqual As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtScreen As TextBox
 
 End Class
